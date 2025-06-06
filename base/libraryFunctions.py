@@ -90,3 +90,16 @@ def heap_sort(arr):
 arr = [3, 1, 4, 1, 5, 9]
 sorted_arr = heap_sort(arr)
 print(sorted_arr)  # 输出: [1, 1, 3, 4, 5, 9]
+
+from datetime import date, timedelta
+d = date(2024, 6, 6)  # 创建一个日期对象（年, 月, 日）
+print(d.weekday()) # 3 表示星期四
+print(d.year, d.month, d.day)      # 输出：2024 6 6
+next_day = d + timedelta(days=1)
+prev_day = d - timedelta(days=1)
+d2 = date(2024, 7, 1)
+print(d2 - d) # 输出：25
+today = date.today()  # 获取今天的日期
+
+import calendar
+calendar.isleap(2024)  # True
